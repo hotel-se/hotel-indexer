@@ -148,3 +148,8 @@
 [2021-11-13T13:06:14.553-0100][38.325s] GC(8) Metaspace: 49985K->49985K(1093632K)
 [2021-11-13T13:06:14.553-0100][38.325s] GC(8) Pause Young (Normal) (G1 Evacuation Pause) 300M->58M(512M) 7.541ms
 [2021-11-13T13:06:14.553-0100][38.325s] GC(8) User=0.07s Sys=0.00s Real=0.01s
+[2021-11-13T13:10:18.468-0100][282.237s] Heap
+[2021-11-13T13:10:18.468-0100][282.237s]  garbage-first heap   total 524288K, used 190457K [0x00000007e0000000, 0x0000000800000000)
+[2021-11-13T13:10:18.468-0100][282.237s]   region size 1024K, 161 young (164864K), 32 survivors (32768K)
+[2021-11-13T13:10:18.468-0100][282.237s]  Metaspace       used 52619K, capacity 53819K, committed 54064K, reserved 1097728K
+[2021-11-13T13:10:18.468-0100][282.237s]   class space    used 6186K, capacity 6702K, committed 6784K, reserved 1048576K

@@ -83,3 +83,20 @@
 2021-11-13 12:06:42.792 INFO  (qtp765242091-41) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&wt=json&_=1636805189627} hits=9938 status=0 QTime=0
 2021-11-13 12:06:42.794 INFO  (qtp765242091-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=2
 2021-11-13 12:07:07.918 INFO  (qtp765242091-18) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/query params={q=*:*&wt=json} hits=9938 status=0 QTime=0
+2021-11-13 12:10:14.483 INFO  (qtp765242091-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1
+2021-11-13 12:10:14.499 INFO  (qtp765242091-20) [   x:hotels] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.hotels tag=null
+2021-11-13 12:10:14.500 INFO  (qtp765242091-20) [   x:hotels] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@287638af: rootName = null, domain = solr.core.hotels, service url = null, agent id = null] for registry solr.core.hotels/com.codahale.metrics.MetricRegistry@78887b80
+2021-11-13 12:10:14.510 INFO  (qtp765242091-20) [   ] o.a.s.c.SolrCore [hotels]  CLOSING SolrCore org.apache.solr.core.SolrCore@478d360b
+2021-11-13 12:10:14.510 INFO  (qtp765242091-20) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.hotels tag=SolrCore@478d360b
+2021-11-13 12:10:14.510 INFO  (qtp765242091-20) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-13 12:10:14.550 INFO  (qtp765242091-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=hotels&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=51
+2021-11-13 12:10:18.445 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@3a393455{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-13 12:10:18.445 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-11-13 12:10:18.446 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1120072844
+2021-11-13 12:10:18.449 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-11-13 12:10:18.449 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@445bb139: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@c46559b
+2021-11-13 12:10:18.453 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-11-13 12:10:18.453 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6fa0450e: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@6f019458
+2021-11-13 12:10:18.455 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-11-13 12:10:18.455 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@37468787: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@78306f4
+2021-11-13 12:10:18.465 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@21aa6d6c{/solr,null,STOPPED}{/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr-webapp/webapp}
