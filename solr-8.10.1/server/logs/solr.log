@@ -1,133 +1,85 @@
-2021-11-11 11:58:00.069 INFO  (main) [   ] o.e.j.u.log Logging initialized @886ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-11-11 11:58:00.219 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 13.0.2+8
-2021-11-11 11:58:00.227 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/edoardoriggio/Nextcloud/USI/5th%20semester/Information%20Retrieval/Project%20Repos/hotel-indexer/solr-8.10.1/server/contexts/] at interval 0
-2021-11-11 11:58:00.458 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-11-11 11:58:00.465 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-11-11 11:58:00.466 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-11-11 11:58:00.467 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2021-11-11 11:58:00.507 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-11-11 11:58:00.510 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
-2021-11-11 11:58:00.510 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-11-11 11:58:00.510 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1
-2021-11-11 11:58:00.510 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-11-11T11:58:00.510283Z
-2021-11-11 11:58:00.520 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr
-2021-11-11 11:58:00.521 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/solr.xml
-2021-11-11 11:58:00.569 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@76a4ebf2, but no JMX reporters were configured - adding default JMX reporter.
-2021-11-11 11:58:00.865 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-11-11 11:58:00.988 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@552ed807[provider=null,keyStore=null,trustStore=null]
-2021-11-11 11:58:00.988 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@552ed807[provider=null,keyStore=null,trustStore=null]
-2021-11-11 11:58:01.098 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@47a7a101[provider=null,keyStore=null,trustStore=null]
-2021-11-11 11:58:01.098 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@47a7a101[provider=null,keyStore=null,trustStore=null]
-2021-11-11 11:58:01.130 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-11-11 11:58:01.244 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2021-11-11 11:58:01.250 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-11-11 11:58:01.311 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@76a4ebf2
-2021-11-11 11:58:01.311 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@76a4ebf2
-2021-11-11 11:58:01.312 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@76a4ebf2
-2021-11-11 11:58:01.334 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr
-2021-11-11 11:58:01.368 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@29e6eb25{/solr,file:///Users/edoardoriggio/Nextcloud/USI/5th%20semester/Information%20Retrieval/Project%20Repos/hotel-indexer/solr-8.10.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr-webapp/webapp}
-2021-11-11 11:58:01.377 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@25a6944c{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-11-11 11:58:01.377 INFO  (main) [   ] o.e.j.s.Server Started @2196ms
-2021-11-11 12:00:55.667 INFO  (qtp2143582219-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=19
-2021-11-11 12:00:55.714 INFO  (qtp2143582219-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=5
-2021-11-11 12:00:55.723 INFO  (qtp2143582219-20) [   x:hotels] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=hotels&action=STATUS&wt=json} status=0 QTime=0
-2021-11-11 12:00:55.959 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.h.a.CoreAdminOperation core create command name=hotels&action=CREATE&instanceDir=hotels&wt=json
-2021-11-11 12:00:55.992 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
-2021-11-11 12:00:56.018 WARN  (qtp2143582219-21) [   x:hotels] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2021-11-11 12:00:56.049 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.s.IndexSchema Schema name=default-config
-2021-11-11 12:00:56.317 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-11-11 12:00:56.352 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.c.CoreContainer Creating SolrCore 'hotels' using configuration from instancedir /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels, trusted=true
-2021-11-11 12:00:56.360 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.hotels' (registry 'solr.core.hotels') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@76a4ebf2
-2021-11-11 12:00:56.371 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.c.SolrCore [[hotels] ] Opening new SolrCore at [/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels], dataDir=[/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/data/]
-2021-11-11 12:00:56.886 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-11-11 12:00:56.886 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-11-11 12:00:56.894 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-11-11 12:00:56.894 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-11-11 12:00:56.934 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/conf
-2021-11-11 12:00:56.943 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-11-11 12:00:56.948 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2021-11-11 12:00:56.959 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-11-11 12:00:56.962 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1716133095760986112
-2021-11-11 12:00:56.965 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-11-11 12:00:56.965 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-11-11 12:00:56.966 INFO  (qtp2143582219-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=hotels&action=CREATE&instanceDir=hotels&wt=json} status=0 QTime=1007
-2021-11-11 12:00:56.973 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.SolrCore [hotels]  Registered new searcher autowarm time: 0 ms
-2021-11-11 12:01:21.388 INFO  (qtp2143582219-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632081298} status=0 QTime=0
-2021-11-11 12:01:21.393 INFO  (qtp2143582219-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632081299} status=0 QTime=4
-2021-11-11 12:01:21.398 INFO  (qtp2143582219-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632081299} status=0 QTime=2
-2021-11-11 12:01:24.922 INFO  (qtp2143582219-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632081298} status=0 QTime=0
-2021-11-11 12:01:24.925 INFO  (qtp2143582219-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632081299} status=0 QTime=3
-2021-11-11 12:01:24.929 INFO  (qtp2143582219-20) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/replication params={wt=json&command=details&_=1636632084914} status=0 QTime=3
-2021-11-11 12:01:24.930 INFO  (qtp2143582219-24) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1636632084913} status=0 QTime=6
-2021-11-11 12:01:24.931 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1636632081299&ts=1636632081299} status=503 QTime=1
-2021-11-11 12:01:24.933 INFO  (qtp2143582219-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/system params={wt=json&_=1636632084914} status=0 QTime=5
-2021-11-11 12:01:31.085 INFO  (qtp2143582219-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632081298} status=0 QTime=0
-2021-11-11 12:01:31.088 INFO  (qtp2143582219-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632081299} status=0 QTime=2
-2021-11-11 12:01:34.826 INFO  (qtp2143582219-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632081298} status=0 QTime=0
-2021-11-11 12:01:34.832 INFO  (qtp2143582219-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632081299} status=0 QTime=5
-2021-11-11 12:01:34.834 INFO  (qtp2143582219-42) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/config params={wt=json&_=1636632094813} status=0 QTime=3
-2021-11-11 12:01:34.835 INFO  (qtp2143582219-24) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1636632084913} status=0 QTime=6
-2021-11-11 12:01:34.885 INFO  (qtp2143582219-22) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1636632084913} status=0 QTime=0
-2021-11-11 12:01:57.474 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/conf/managed-schema
-2021-11-11 12:01:57.785 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update/json/docs params={}{add=[2c40671f-fabf-4793-84e2-b6956598bc13 (1716133159214514176), cb5b0671-d3b4-4825-a3b2-5d938a5bba0f (1716133159261700096), 68b88249-0dc5-48ed-95b5-f442edc60b37 (1716133159262748672), 1a89ed0f-95a1-4c79-b3bb-0c07dbe57d54 (1716133159264845824), 72c81cb8-73b2-4152-b002-4dc065e836c0 (1716133159266942976), 640e6473-965f-4ecf-8e86-053e7b43259d (1716133159267991552), 5420062a-a181-41aa-b8ac-34e95dbb83a9 (1716133159269040128), bc24c777-9dcf-4cc8-896c-4642123af7cb (1716133159270088704), eb851ce0-6d84-4e26-b974-5df520be39b0 (1716133159271137280), e8aa364b-579a-4d4b-b848-152dd268a5c4 (1716133159271137281), ... (735 adds)]} 0 481
-2021-11-11 12:01:58.317 INFO  (qtp2143582219-22) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update/json/docs params={}{add=[cff83997-dd9d-42e9-985e-a47488df69fb (1716133159544815616), b603b5d7-2840-4421-b787-4e5617f00fa9 (1716133159546912768), c4a6abdd-cd6c-4a49-a05a-f8edd18794ef (1716133159547961344), 9f646d67-f77e-4107-85ea-94dabb9df116 (1716133159547961345), 260d01ef-16c2-4a31-bbd1-b0be3cc1bba7 (1716133159549009920), 86b73c27-fbaf-4993-ad7f-2d2aee6ab516 (1716133159549009921), 7df59a25-214d-442a-9967-ff55c97e3e79 (1716133159549009922), c806d2fc-b7ce-460c-b95f-3134bdbaf4ce (1716133159549009923), fc9a7eab-76d0-42d7-9549-55cdf64e1a89 (1716133159550058496), 6f76c4ff-2e58-4ac2-a62b-8e279b4096ed (1716133159550058497), ... (3435 adds)]} 0 526
-2021-11-11 12:01:58.347 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/conf/managed-schema
-2021-11-11 12:01:59.259 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update/json/docs params={}{add=[17f13398-beda-45ef-86de-d456290f3dd7 (1716133160127823872), 05c3feb5-3311-424a-a341-c6eb852b06a9 (1716133160129921024), abbfb505-05dc-4bd5-8672-b9d06b142de8 (1716133160130969600), b734d718-8fc5-481d-8843-47d936133433 (1716133160132018176), 36338e83-f7eb-49ce-858e-1293e46df9b0 (1716133160132018177), 3e4eda4f-3602-46bf-b986-0781f70f46c0 (1716133160133066752), 34af9f09-9fdb-465c-a427-7aca5b64b66e (1716133160133066753), da5d28a0-5ccc-41ea-88ea-b4b26e2dd94a (1716133160133066754), 07e4136c-8339-45a0-961d-3b46e14a7d28 (1716133160134115328), 3c2c5c2b-968e-49f7-9e2c-83f8526e9484 (1716133160135163904), ... (5768 adds)]} 0 939
-2021-11-11 12:02:00.192 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-11-11 12:02:00.197 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.SolrCore [hotels]  Registered new searcher autowarm time: 3 ms
-2021-11-11 12:02:00.199 INFO  (qtp2143582219-22) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update params={commit=true}{commit=} 0 938
-2021-11-11 12:02:04.448 INFO  (qtp2143582219-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:02:04.451 INFO  (qtp2143582219-20) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/config params={wt=json&_=1636632124435} status=0 QTime=0
-2021-11-11 12:02:04.453 INFO  (qtp2143582219-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=3
-2021-11-11 12:02:04.453 INFO  (qtp2143582219-42) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1636632124435} status=0 QTime=3
-2021-11-11 12:02:04.540 INFO  (qtp2143582219-24) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1636632124435} status=0 QTime=8
-2021-11-11 12:02:09.479 INFO  (qtp2143582219-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:02:09.482 INFO  (qtp2143582219-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=2
-2021-11-11 12:02:34.808 INFO  (qtp2143582219-22) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=url:*Rome*+||+url:*rome*&indent=true&q.op=OR&_=1636632129463} hits=213 status=0 QTime=60
-2021-11-11 12:02:34.937 INFO  (qtp2143582219-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:02:34.941 INFO  (qtp2143582219-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=4
-2021-11-11 12:02:34.948 INFO  (qtp2143582219-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=url:*Rome*+||+url:*rome*&indent=true&q.op=OR&_=1636632129463} hits=213 status=0 QTime=10
-2021-11-11 12:02:48.434 INFO  (qtp2143582219-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/ping params={wt=json&_=1636632124388&ts=1636632124388} hits=9938 status=0 QTime=3
-2021-11-11 12:02:48.434 INFO  (qtp2143582219-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/ping params={wt=json&_=1636632124388&ts=1636632124388} status=0 QTime=3
-2021-11-11 12:02:50.994 INFO  (qtp2143582219-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:02:50.994 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/config params={wt=json&_=1636632124435} status=0 QTime=0
-2021-11-11 12:02:50.995 INFO  (qtp2143582219-22) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1636632124435} status=0 QTime=1
-2021-11-11 12:02:50.996 INFO  (qtp2143582219-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=2
-2021-11-11 12:02:51.035 INFO  (qtp2143582219-17) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1636632124435} status=0 QTime=4
-2021-11-11 12:02:54.388 INFO  (qtp2143582219-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:02:54.388 INFO  (qtp2143582219-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/config params={wt=json&_=1636632124435} status=0 QTime=0
-2021-11-11 12:02:54.390 INFO  (qtp2143582219-18) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1636632124435} status=0 QTime=1
-2021-11-11 12:02:54.392 INFO  (qtp2143582219-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=3
-2021-11-11 12:02:54.450 INFO  (qtp2143582219-21) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1636632124435} status=0 QTime=2
-2021-11-11 12:03:04.754 INFO  (qtp2143582219-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:03:04.756 INFO  (qtp2143582219-17) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/config params={wt=json&_=1636632124435} status=0 QTime=0
-2021-11-11 12:03:04.758 INFO  (qtp2143582219-42) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1636632124435} status=0 QTime=1
-2021-11-11 12:03:04.759 INFO  (qtp2143582219-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=3
-2021-11-11 12:03:04.783 INFO  (qtp2143582219-18) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1636632124435} status=0 QTime=2
-2021-11-11 12:03:21.465 INFO  (qtp2143582219-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:03:21.468 INFO  (qtp2143582219-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=3
-2021-11-11 12:03:24.931 INFO  (qtp2143582219-20) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1636632129463} hits=9938 status=0 QTime=0
-2021-11-11 12:03:25.012 INFO  (qtp2143582219-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:03:25.013 INFO  (qtp2143582219-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1636632129463} hits=9938 status=0 QTime=0
-2021-11-11 12:03:25.015 INFO  (qtp2143582219-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=1
-2021-11-11 12:03:45.499 INFO  (qtp2143582219-41) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&wt=json&_=1636632129463} hits=9938 status=0 QTime=0
-2021-11-11 12:03:45.610 INFO  (qtp2143582219-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636632124388} status=0 QTime=0
-2021-11-11 12:03:45.611 INFO  (qtp2143582219-17) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&wt=json&_=1636632129463} hits=9938 status=0 QTime=0
-2021-11-11 12:03:45.613 INFO  (qtp2143582219-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636632124388} status=0 QTime=2
-2021-11-11 12:07:28.727 INFO  (qtp2143582219-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1
-2021-11-11 12:07:28.742 INFO  (qtp2143582219-20) [   x:hotels] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.hotels tag=null
-2021-11-11 12:07:28.742 INFO  (qtp2143582219-20) [   x:hotels] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4938e1d8: rootName = null, domain = solr.core.hotels, service url = null, agent id = null] for registry solr.core.hotels/com.codahale.metrics.MetricRegistry@4969b4aa
-2021-11-11 12:07:28.751 INFO  (qtp2143582219-20) [   ] o.a.s.c.SolrCore [hotels]  CLOSING SolrCore org.apache.solr.core.SolrCore@4c96b1a5
-2021-11-11 12:07:28.751 INFO  (qtp2143582219-20) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.hotels tag=SolrCore@4c96b1a5
-2021-11-11 12:07:28.752 INFO  (qtp2143582219-20) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2021-11-11 12:07:28.782 INFO  (qtp2143582219-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=hotels&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=40
-2021-11-11 12:07:37.589 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@25a6944c{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-11-11 12:07:37.589 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2021-11-11 12:07:37.590 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2017393480
-2021-11-11 12:07:37.593 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2021-11-11 12:07:37.593 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@57272109: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@d8bc2ab
-2021-11-11 12:07:37.597 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2021-11-11 12:07:37.597 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@23f86d8a: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@1309b2fb
-2021-11-11 12:07:37.599 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2021-11-11 12:07:37.599 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2264ea32: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@5fb173df
-2021-11-11 12:07:37.609 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@29e6eb25{/solr,null,STOPPED}{/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr-webapp/webapp}
+2021-11-13 12:05:37.120 INFO  (main) [   ] o.e.j.u.log Logging initialized @883ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-11-13 12:05:37.287 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 13.0.2+8
+2021-11-13 12:05:37.295 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/edoardoriggio/Nextcloud/USI/5th%20semester/Information%20Retrieval/Project%20Repos/hotel-indexer/solr-8.10.1/server/contexts/] at interval 0
+2021-11-13 12:05:37.526 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-11-13 12:05:37.534 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-11-13 12:05:37.534 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-11-13 12:05:37.535 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-11-13 12:05:37.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-11-13 12:05:37.589 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-11-13 12:05:37.589 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-11-13 12:05:37.589 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1
+2021-11-13 12:05:37.589 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-11-13T12:05:37.589913Z
+2021-11-13 12:05:37.602 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr
+2021-11-13 12:05:37.602 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/solr.xml
+2021-11-13 12:05:37.664 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2, but no JMX reporters were configured - adding default JMX reporter.
+2021-11-13 12:05:38.040 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-11-13 12:05:38.198 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4bafe935[provider=null,keyStore=null,trustStore=null]
+2021-11-13 12:05:38.198 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4bafe935[provider=null,keyStore=null,trustStore=null]
+2021-11-13 12:05:38.330 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@64968732[provider=null,keyStore=null,trustStore=null]
+2021-11-13 12:05:38.330 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@64968732[provider=null,keyStore=null,trustStore=null]
+2021-11-13 12:05:38.377 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-11-13 12:05:38.515 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-11-13 12:05:38.527 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-11-13 12:05:38.599 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2021-11-13 12:05:38.599 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2021-11-13 12:05:38.600 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2021-11-13 12:05:38.630 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr
+2021-11-13 12:05:38.668 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@21aa6d6c{/solr,file:///Users/edoardoriggio/Nextcloud/USI/5th%20semester/Information%20Retrieval/Project%20Repos/hotel-indexer/solr-8.10.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr-webapp/webapp}
+2021-11-13 12:05:38.681 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@3a393455{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-13 12:05:38.682 INFO  (main) [   ] o.e.j.s.Server Started @2447ms
+2021-11-13 12:05:44.117 INFO  (qtp765242091-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636805144035} status=0 QTime=26
+2021-11-13 12:05:44.123 INFO  (qtp765242091-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805144036} status=0 QTime=32
+2021-11-13 12:05:44.135 INFO  (qtp765242091-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805144036} status=0 QTime=2
+2021-11-13 12:06:04.662 INFO  (qtp765242091-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2021-11-13 12:06:04.680 INFO  (qtp765242091-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2
+2021-11-13 12:06:04.688 INFO  (qtp765242091-17) [   x:hotels] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=hotels&action=STATUS&wt=json} status=0 QTime=0
+2021-11-13 12:06:04.804 INFO  (qtp765242091-25) [   x:hotels] o.a.s.h.a.CoreAdminOperation core create command name=hotels&action=CREATE&instanceDir=hotels&wt=json
+2021-11-13 12:06:04.848 INFO  (qtp765242091-25) [   x:hotels] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-13 12:06:04.881 WARN  (qtp765242091-25) [   x:hotels] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-13 12:06:04.921 INFO  (qtp765242091-25) [   x:hotels] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-13 12:06:05.269 INFO  (qtp765242091-25) [   x:hotels] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-13 12:06:05.306 INFO  (qtp765242091-25) [   x:hotels] o.a.s.c.CoreContainer Creating SolrCore 'hotels' using configuration from instancedir /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels, trusted=true
+2021-11-13 12:06:05.316 INFO  (qtp765242091-25) [   x:hotels] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.hotels' (registry 'solr.core.hotels') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58cbafc2
+2021-11-13 12:06:05.333 INFO  (qtp765242091-25) [   x:hotels] o.a.s.c.SolrCore [[hotels] ] Opening new SolrCore at [/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels], dataDir=[/Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/data/]
+2021-11-13 12:06:05.890 INFO  (qtp765242091-25) [   x:hotels] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-13 12:06:05.890 INFO  (qtp765242091-25) [   x:hotels] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-13 12:06:05.897 INFO  (qtp765242091-25) [   x:hotels] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-13 12:06:05.897 INFO  (qtp765242091-25) [   x:hotels] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-11-13 12:06:05.937 INFO  (qtp765242091-25) [   x:hotels] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/conf
+2021-11-13 12:06:05.948 INFO  (qtp765242091-25) [   x:hotels] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-13 12:06:05.953 INFO  (qtp765242091-25) [   x:hotels] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-13 12:06:05.961 INFO  (qtp765242091-25) [   x:hotels] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-13 12:06:05.964 INFO  (qtp765242091-25) [   x:hotels] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1716314613705867264
+2021-11-13 12:06:05.967 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-13 12:06:05.967 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-13 12:06:05.968 INFO  (qtp765242091-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=hotels&action=CREATE&instanceDir=hotels&wt=json} status=0 QTime=1164
+2021-11-13 12:06:05.973 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.SolrCore [hotels]  Registered new searcher autowarm time: 0 ms
+2021-11-13 12:06:12.124 INFO  (qtp765242091-24) [   x:hotels] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/conf/managed-schema
+2021-11-13 12:06:12.435 INFO  (qtp765242091-24) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update/json/docs params={}{add=[e956a65b-9525-4d4a-bf4a-de634aeb8cef (1716314620167192576), b8d87bfe-7705-4471-917e-06f7ff224416 (1716314620223815680), 092c252b-a697-4196-b186-06b640b5cd77 (1716314620225912832), 0581e99a-54e1-4395-9c27-2b2b45c0a5a6 (1716314620226961408), bd69d9bf-17a0-40f2-80e1-c66fa2c4e647 (1716314620230107136), 107ea2e4-72fc-4886-a20c-0ad9ff2f3f8d (1716314620231155712), 705c0d50-c40b-47d7-b348-7b6c43665917 (1716314620232204288), e5f0bdb3-e29c-4f71-b099-5d525138d421 (1716314620233252864), d4028c6d-9791-4841-a084-7131538cc59d (1716314620234301440), 467bd46f-b6a8-4003-b9c1-fc78a6635b61 (1716314620235350016), ... (735 adds)]} 0 487
+2021-11-13 12:06:13.011 INFO  (qtp765242091-19) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update/json/docs params={}{add=[524a16c9-35ed-4daa-9f65-cfc5e6b3e610 (1716314620497494016), fd9fc4a7-3b58-4863-a428-07da95e36386 (1716314620498542592), 8a407997-ba14-46da-87df-9bd55856359e (1716314620499591168), 7ad3ec26-a998-4412-8b21-119845a69ce7 (1716314620499591169), 0e4be5e3-1af2-4342-8439-ac84c92bd305 (1716314620500639744), e22595c3-3423-4f90-a012-6e7946405427 (1716314620500639745), 0fafe5b6-3c27-496e-a7c0-24a756f10301 (1716314620500639746), 708daff5-3ae2-4879-b771-f828acc5fe6c (1716314620500639747), f57b96ea-ca7b-40d3-9de7-f4533d59b8f1 (1716314620501688320), 9d953f85-6760-4e4d-a42e-4802ae98685b (1716314620501688321), ... (3435 adds)]} 0 570
+2021-11-13 12:06:13.043 INFO  (qtp765242091-24) [   x:hotels] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/edoardoriggio/Nextcloud/USI/5th semester/Information Retrieval/Project Repos/hotel-indexer/solr-8.10.1/server/solr/hotels/conf/managed-schema
+2021-11-13 12:06:14.181 INFO  (qtp765242091-24) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update/json/docs params={}{add=[6fc99def-e943-4569-bf26-4d84659e9a66 (1716314621128736768), d003772e-acc6-4431-b220-ae8e210445dc (1716314621130833920), 1f5a6dd8-e885-4b99-8881-3e5a9350e95e (1716314621131882496), 092c2005-b992-45f6-8105-9cf00437d171 (1716314621131882497), 590774b4-0932-4f22-abf5-f70388eb5e13 (1716314621131882498), 12aab79b-4f0f-485b-b928-da5dd1f9afbe (1716314621132931072), a5c5312e-57a6-4760-af73-cd3ab24b7144 (1716314621132931073), a17e8820-d329-4c07-8d75-1b13664e4dbd (1716314621132931074), b8369dd9-1bc7-41e6-8583-ad4064518c35 (1716314621133979648), 621aaa63-5e77-41a1-9228-e6e3631009aa (1716314621133979649), ... (5768 adds)]} 0 1167
+2021-11-13 12:06:15.096 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-13 12:06:15.101 INFO  (searcherExecutor-15-thread-1-processing-x:hotels) [   x:hotels] o.a.s.c.SolrCore [hotels]  Registered new searcher autowarm time: 4 ms
+2021-11-13 12:06:15.103 INFO  (qtp765242091-19) [   x:hotels] o.a.s.u.p.LogUpdateProcessorFactory [hotels]  webapp=/solr path=/update params={commit=true}{commit=} 0 919
+2021-11-13 12:06:24.569 INFO  (qtp765242091-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636805184515} status=0 QTime=0
+2021-11-13 12:06:24.572 INFO  (qtp765242091-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=3
+2021-11-13 12:06:24.578 INFO  (qtp765242091-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=3
+2021-11-13 12:06:26.266 INFO  (qtp765242091-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636805184515} status=0 QTime=0
+2021-11-13 12:06:26.271 INFO  (qtp765242091-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=4
+2021-11-13 12:06:26.277 INFO  (qtp765242091-25) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1636805186256} status=0 QTime=9
+2021-11-13 12:06:26.280 INFO  (qtp765242091-20) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1636805184515&ts=1636805184515} status=503 QTime=1
+2021-11-13 12:06:26.280 INFO  (qtp765242091-41) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/replication params={wt=json&command=details&_=1636805186257} status=0 QTime=6
+2021-11-13 12:06:26.283 INFO  (qtp765242091-26) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/admin/system params={wt=json&_=1636805186256} status=0 QTime=10
+2021-11-13 12:06:29.646 INFO  (qtp765242091-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636805184515} status=0 QTime=0
+2021-11-13 12:06:29.650 INFO  (qtp765242091-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=2
+2021-11-13 12:06:31.951 INFO  (qtp765242091-41) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1636805189627} hits=9938 status=0 QTime=38
+2021-11-13 12:06:32.067 INFO  (qtp765242091-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636805184515} status=0 QTime=0
+2021-11-13 12:06:32.069 INFO  (qtp765242091-19) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1636805189627} hits=9938 status=0 QTime=1
+2021-11-13 12:06:32.071 INFO  (qtp765242091-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=3
+2021-11-13 12:06:42.694 INFO  (qtp765242091-20) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&wt=json&_=1636805189627} hits=9938 status=0 QTime=0
+2021-11-13 12:06:42.792 INFO  (qtp765242091-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636805184515} status=0 QTime=0
+2021-11-13 12:06:42.792 INFO  (qtp765242091-41) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&wt=json&_=1636805189627} hits=9938 status=0 QTime=0
+2021-11-13 12:06:42.794 INFO  (qtp765242091-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636805184515} status=0 QTime=2
+2021-11-13 12:07:07.918 INFO  (qtp765242091-18) [   x:hotels] o.a.s.c.S.Request [hotels]  webapp=/solr path=/query params={q=*:*&wt=json} hits=9938 status=0 QTime=0
